@@ -164,8 +164,8 @@ func shouldMutate(ignoredList []string, metadata *metav1.ObjectMeta) ([]string, 
 func createPatch(pod *corev1.Pod, sideCarNames []string, sideCars map[string]*SideCar, annotations map[string]string) ([]byte, error) {
 
 	var patch []patchOperation
-	var containers       []corev1.Container
-	var volumes          []corev1.Volume
+	var containers []corev1.Container
+	var volumes []corev1.Volume
 	var imagePullSecrets []corev1.LocalObjectReference
 	count := 0
 

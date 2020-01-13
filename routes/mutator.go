@@ -14,7 +14,7 @@ import (
 
 /*SideCars is an array of named SideCar instances*/
 type SideCars struct {
-	Sidecars []SideCar	`yaml:"sidecars"`
+	Sidecars []SideCar `yaml:"sidecars"`
 }
 
 /*SideCar is a named sidecar to be injected*/
