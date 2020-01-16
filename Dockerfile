@@ -7,7 +7,7 @@ RUN go get -u github.com/golang/dep/cmd/dep \
  && go get golang.org/x/tools/cmd/goimports \
  && go get -u golang.org/x/lint/golint
 
-WORKDIR /go/src/github.com/expediadotcom/kubernetes-sidecar-injector
+WORKDIR /go/src/github.com/ExpediaDotCom/kubernetes-sidecar-injector
 
 COPY . .
 
