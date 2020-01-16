@@ -101,7 +101,7 @@ func readRequestBody(r *http.Request) ([]byte, error) {
 		return nil, fmt.Errorf("received Content-Type=%s, Expected Content-Type is 'application/json'", contentType)
 	}
 
-	glog.Infof("Request received  : \n %s \n", string(body))
+	glog.Infof("Request received: \n %s \n", body)
 	return body, nil
 }
 

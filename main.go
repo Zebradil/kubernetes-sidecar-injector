@@ -47,6 +47,7 @@ func addRoutes(simpleServer httpd.SimpleServer, conf config) error {
 	}
 
 	simpleServer.AddRoute("/mutate", mutator.Mutate)
+	simpleServer.AddRoute("/debug", routes.Debug)
 	return nil
 }
 
